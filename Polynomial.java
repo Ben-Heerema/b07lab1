@@ -58,10 +58,7 @@ public class Polynomial{
 
 	public boolean hasRoot(double x) {
 		
-		if(evaluate(x) == 0) { // does java round weird? should I be concerned about this?
-			return true;
-		}
-		return false;
+		return(evaluate(x) == 0); // Java rounds floats weird, should I accept values within a given epsilon. 
 		
 	}
 
